@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "DistillationServiceFrontend"
+  "defaultProject": "DistillationServiceFrontend",
+  "cli": {
+    "analytics": false
+  }
 }

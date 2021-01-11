@@ -9,12 +9,14 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
+import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavbarComponent,
+    SidebarMenuComponent,
   ],
   imports: [
     BrowserModule,
