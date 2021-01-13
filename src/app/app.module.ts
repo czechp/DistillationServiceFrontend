@@ -10,6 +10,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { TitleComponent } from './components/title/title.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.com
     AppComponent,
     TopNavbarComponent,
     SidebarMenuComponent,
+    RegisterPageComponent,
+    TitleComponent,
   ],
   imports: [
     BrowserModule,
