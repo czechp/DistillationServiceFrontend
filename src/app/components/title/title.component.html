@@ -1,2 +1,3 @@
-<h1 class="text-center bg-success text-light p-3">{{title}}</h1>
-<h2 *ngIf="statement.length !== 0" class="text-center">{{statement}}</h2>
+<h1 class="text-center bg-success text-light p-3 m-0">{{title}}</h1>
+<h2 @fade  *ngIf="statement.length !== 0" class="text-center m-0 text-light p-3"
+[ngClass]="{'bg-success': !isError, 'bg-danger': isError}">{{statement}}</h2>
