@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-register-page',
@@ -6,8 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-page.component.css']
 })
 export class RegisterPageComponent implements OnInit {
-  public statement: String = 'Błąd Coś tam';
-  constructor() { }
+  public registerForm: FormGroup;
+
+  public statement: String = '';
+  constructor(private formBuilder: FormBuilder) { 
+    this.registerForm = formBuilder.group({
+        username: [Validators.minLength(4), Validators.maxLength(20)],
+        password: [Validators.minLength(4), Validators.maxLength(20)],
+        email: [Validators.email],
+        emailConfirmation: [Validators.email]
+    }  
+    );
+  }
 
   ngOnInit(): void {
   }
