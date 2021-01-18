@@ -8,12 +8,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
-import {} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { TitleComponent } from './components/title/title.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,8 +31,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
+    MatInputModule,
+    FormsModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

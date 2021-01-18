@@ -1,3 +1,15 @@
-<app-title [title]='"Rejestracja"' [statement]="statement"></app-title>
-<div class="w-50 border ">
+<app-title [title]="'Rejestracja'" [statement]="statement"></app-title>
+<div class="d-flex flex-column align-items-center">
+  <form
+    [formGroup]="registerForm"
+    class="d-flex flex-column align-items-center border border-1 w-50 mt-5 p-3"
+  >
+    <!-- Username -->
+    <mat-form-field>
+      <mat-hint>Podaj login</mat-hint>
+      <mat-error *ngIf="registerForm.get('username')?.hasError('required')">To pole jest wymagane</mat-error
+      >
+      <input matInput type="text" formControlName="username"/>
+    </mat-form-field>
+  </form>
 </div>
